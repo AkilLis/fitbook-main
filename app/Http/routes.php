@@ -19,6 +19,7 @@ Route::get('/', function ()
 Route::get('/{clubId?}', function(Request $request, $clubId)
 {
 	$widgets = array();
+	$directPage = 'welcome';
 	switch ($clubId) {
 		case 'flexgym':
 			array_push($widgets, 'widgets.bootstrap');
@@ -29,8 +30,9 @@ Route::get('/{clubId?}', function(Request $request, $clubId)
 			break;
 		default:
 			array_push($widgets, 'widgets.twitter');
+			$directPage = 'user';
 			break;
 	}
-	return view('welcome')->with('widgets', $widgets);
+	return view($directPage)->with('widgets', $widgets);
 	/*return $widgets;*/
 });
