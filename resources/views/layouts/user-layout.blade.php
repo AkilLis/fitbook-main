@@ -2,6 +2,7 @@
 <html ng-app="fitwork">
 <head>
     <title>Laravel</title>
+    @include('includes.header')
 </head>
 <body class="nav-md">
     <div class="container body">

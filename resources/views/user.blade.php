@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('layouts.user-layout')
 @section('content')
 <!-- page content -->
   <div main-page>

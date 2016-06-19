@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default-layout')
 @section('content')
 <!-- page content -->
   <div main-page>
