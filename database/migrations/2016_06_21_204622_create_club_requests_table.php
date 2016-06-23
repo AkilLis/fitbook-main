@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCommentsTable extends Migration
+class CreateClubRequestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,9 @@ class CreateCommentsTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('comments', function(Blueprint $table){
-            $table->increments('id');
-            $table->integer('posts_id')->index()->unsigned();
-            $table->integer('users_id')->index()->unsigned();
-            $table->text('body');
+        Schema::create('club_requests', function (Blueprint $table) {
+            $table->integer('club_id')->unsigned()->index();
+            $table->integer('user_id')->unsigned()->index();
             $table->timestamps();
         });
     }
@@ -29,7 +26,6 @@ class CreateCommentsTable extends Migration
      */
     public function down()
     {
-        //
-        Schema::drop('comments');
+        Schema::drop('club_requests');
     }
 }

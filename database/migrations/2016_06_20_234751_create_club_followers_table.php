@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostTable extends Migration
+class CreateClubFollowersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,9 @@ class CreatePostTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('posts', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('user_id')->index()->unsigned();
-            $table->string('title');
-            $table->text('body');
+        Schema::create('club_followers', function (Blueprint $table) {
+            $table->integer('club_id')->unsigned()->index();
+            $table->integer('user_id')->unsigned()->index();
             $table->timestamps();
         });
     }
@@ -29,7 +26,6 @@ class CreatePostTable extends Migration
      */
     public function down()
     {
-        //
-        Schema::drop('posts');
+        Schema::drop('club_followers');
     }
 }
