@@ -13,5 +13,8 @@
     <div class="container large-12 columns" ng-controller="searchCtrl">
 		@yield('content')
     </div>
+     <script src="{{asset('js/masonry.pkgd.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/foundation.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/what-input.js')}}"></script>
 </body>
 </html>

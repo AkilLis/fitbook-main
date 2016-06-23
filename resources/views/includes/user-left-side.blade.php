@@ -112,25 +112,10 @@
             <li class="tabs-title  wizard-tab"><a href="#page-body">Гол хэсэг</a></li>
             <li class="tabs-title  wizard-tab"><a href="#page-footer">Хөл</a></li>
           </ul>
-          <div class="row small-up-1 medium-up-2 large-up-2 widget-container" id="page-header">
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="This is header">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
+          <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            ...
           </div>
           <div class="row small-up-1 medium-up-2 large-up-2 widget-container" id="page-body">
             <div class="column">

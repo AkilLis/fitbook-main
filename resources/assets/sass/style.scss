@@ -266,3 +266,22 @@ body{
 .widget-container{
 	margin-top: 15px;
 }
+.header-container{
+	display: inline-flex;
+	float: right;
+}
+.login-input{
+	width: 300px;
+}
+// .login-item{
+// 	float: right;
+// }
+.full-body { 
+  background: url(../images/site/back.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
