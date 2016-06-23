@@ -16,6 +16,11 @@ Route::get('/', function ()
     return view('index');
 });
 
+/*Route::get('/test/{userId}', function($userId)
+{
+	return $userId;
+})->middleware('throttle:3');*/
+
 Route::get('/{clubId?}', function(Request $request, $clubId)
 {
 	$widgets = array();
@@ -26,7 +31,6 @@ Route::get('/{clubId?}', function(Request $request, $clubId)
 			array_push($widgets, 'widgets.foundation');
 			break;
 		case 'goldengym':
-			array_push($widgets, 'widgets.foundation');
 			break;
 		default:
 			array_push($widgets, 'widgets.twitter');
