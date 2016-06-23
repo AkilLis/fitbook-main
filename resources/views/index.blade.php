@@ -1,13 +1,8 @@
 @extends('layouts.master-layout')
 @section('content')
-<!-- page content -->
-  <div main-page>
-    Index Page 
-    <!-- <ul>
-    	<li><a href="/flexgym">Flex Gym</a></li>
-    	<li><a href="/goldengym">Golden Gym</a></li>
-    	<li><a href="/etc">Etc</a></li>
-    </ul> -->
-  </div>
-<!-- /page content -->
+	<div map-lazy-load="https://maps.google.com/maps/api/js">
+  		<ng-map center="location" zoom="16" style="height:900px;margin:12px;box-shadow:0 3px 25px black;">
+  		</ng-map>
+  		<button ng-click="findMyLocation()" style="background-color:green;">Find me</button>
+	</div>
 @stop

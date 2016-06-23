@@ -2,33 +2,16 @@
 <html ng-app="fitwork">
 <head>
     <title>Laravel</title>
-    <style>
-	    ul#club-info {
-		    padding: 0;
-		}
-
-		ul#club-info li {
-		    display: inline;
-		}
-
-		ul#club-info li a {
-		    background-color: black;
-		    color: white;
-		    padding: 10px 20px;
-		    text-decoration: none;
-		    border-radius: 4px 4px 0 0;
-		}
-
-		ul#club-info li a:hover {
-		    background-color: orange;
-		}
-    </style>
+    @include('includes.header')
+    <script type="text/javascript" src="{{asset('js/jquery.min.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/angular.min.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/ng-map.min.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('app/app.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('app/controller/clubsearchcontroller.js')}}" ></script>
 </head>
-<body class="nav-md" id="style-3">
-    <div class="container body">
-        <div class="main_container">
-            @yield('content')
-    	</div>
+<body>
+    <div class="container large-12 columns" ng-controller="searchCtrl">
+		@yield('content')
     </div>
 </body>
 </html>
