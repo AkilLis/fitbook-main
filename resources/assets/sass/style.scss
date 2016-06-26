@@ -1,4 +1,4 @@
-$body-font: "Ch Opus";
+
 @mixin menu-positioning() {
 	position: fixed;
 	display: block;
@@ -11,7 +11,6 @@ $menu-color: #272C33;
 
 body{
 	background-color: #EBECED;
-	font-family: $body-font;
 }
 .logo{
 	font-size: 20px;
@@ -267,25 +266,6 @@ body{
 .widget-container{
 	margin-top: 15px;
 }
-.header-container{
-	display: inline-flex;
-	float: right;
-}
-.login-input{
-	width: 300px;
-}
-// .login-item{
-// 	float: right;
-// }
-.full-body { 
-  background: url(../images/site/back.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: auto;
-  width: 100%;
-}
 /*WIDGET EFFECT*/
 .grid {
 	max-width: 69em;
@@ -355,5 +335,68 @@ a:hover,
 a:active {
 	color: #333;
 }
+.header-container{	
+	margin: 5px;
+	margin-right: 0rem !important;
+	float: right;
+}
+.login-input{
+	width: 300px;
+}
+// .login-item{
+// 	float: right;
+// }
+.login-item{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
 
-
+}
+.btn-fb{
+	border-radius: 4px !important;
+}
+.btn-1{
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+.btn-2{
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	margin-left: -5px !important;
+}
+body.dark{
+    background: url(../images/site/back.jpg) no-repeat center center fixed !important; 
+    background-size:cover !important;
+    background-position: 0 0;
+}
+.btn-trans{
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255,0.3);
+	&:hover{
+	background-color: rgba(255, 255, 255,0.3);
+}
+}
+.login-item input{
+	background-color:transparent;
+	color: white;
+	&:hover,&:active, &:focus, &:visited{
+		background-color: rgba(255, 255, 255,0.3);
+	}
+}
+.btn-success{
+	background-color: #89B02C;
+	&:hover{
+		background-color: #A5D92B;
+	}
+}
+.dropdown-menu{
+	padding: 0px;
+	& li{
+	list-style-type: none;
+	padding: 10px;
+	&:hover{
+		background-color:#ccc;
+	}
+}
+}
