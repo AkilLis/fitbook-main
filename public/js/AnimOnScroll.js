@@ -11,12 +11,12 @@
 ;( function( window ) {
 	
 	'use strict';
-	
-	var docElem = window.document.documentElement;
+	var pane;
 
 	function getViewportH() {
-		var client = docElem['clientHeight'],
-			inner = window['innerHeight'];
+		debugger;
+		var client = pane.clientHeight,
+			inner = pane['innerHeight'];
 		
 		if( client < inner )
 			return inner;
@@ -25,7 +25,7 @@
 	}
 
 	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
+		return pane.pageYOffset || pane.scrollTop;
 	}
 
 	// http://stackoverflow.com/a/5598797/989439
@@ -69,7 +69,9 @@
 		return a;
 	}
 
-	function AnimOnScroll( el, options ) {	
+	function AnimOnScroll(pane_param, el, options ) {	
+		debugger;
+		pane = pane_param;
 		this.el = el;
 		this.options = extend( this.defaults, options );
 		this._init();
@@ -110,10 +112,11 @@
 					} );
 
 					// animate on scroll the items inside the viewport
-					window.addEventListener( 'scroll', function() {
+					document.getElementById("scrollAbleWizard").addEventListener( 'scroll', function() {
+						self._onScrollFn();
 					}, false );
 
-					window.addEventListener( 'resize', function() {
+					document.getElementById("scrollAbleWizard").addEventListener( 'resize', function() {
 						self._resizeHandler();
 					}, false );
 				}
@@ -121,6 +124,7 @@
 			});
 		},
 		_onScrollFn : function() {
+			debugger;
 			var self = this;
 			if( !this.didScroll ) {
 				this.didScroll = true;
@@ -128,6 +132,7 @@
 			}
 		},
 		_scrollPage : function() {
+			debugger;
 			var self = this;
 			this.items.forEach( function( el, i ) {
 				if( !classie.has( el, 'shown' ) && !classie.has( el, 'animate' ) && inViewport( el, self.options.viewportFactor ) ) {
