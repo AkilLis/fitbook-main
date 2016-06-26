@@ -16,6 +16,18 @@
             @yield('content')
     	</div>
     </div>
-   
+   <!-- FOR WIDGET ANIMATION -->
+   <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/masonry.pkgd.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/imagesloaded.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/classie.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/AnimOnScroll.js')}}"></script>
+    <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+                minDuration : 0.4,
+                maxDuration : 0.7,
+                viewportFactor : 0.2
+        } );
+    </script>
 </body>
 </html>

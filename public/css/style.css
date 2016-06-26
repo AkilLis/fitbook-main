@@ -57,9 +57,9 @@ body {
   margin-left: 90px;
   margin-top: 50px;
   height: 100%;
-  position: fixed;
   display: block;
-  overflow-y: auto;
+  position: absolute;
+  overflow-y: scroll;
   box-shadow: 2px 0px 8px 0px rgba(50, 50, 50, 0.25); }
 
 .sbi-stage__stages-container {
@@ -264,5 +264,56 @@ body {
   background-size: cover;
   height: auto;
   width: 100%; }
+
+/*WIDGET EFFECT*/
+.grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0; }
+  .grid li {
+    display: block;
+    float: left;
+    padding: 7px;
+    width: 33%;
+    opacity: 0; }
+  .grid li.shown, .grid .no-js .grid li, .grid .no-cssanimations .grid li {
+    opacity: 1; }
+  .grid li a, .grid li img {
+    outline: none;
+    border: none;
+    display: block;
+    max-width: 100%; }
+
+/* Effect 6: flip (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-6 {
+  perspective: 1300px; }
+  .grid.effect-6 li.animate {
+    transform-style: preserve-3d;
+    transform-origin: 0% 0%;
+    transform: rotateX(-80deg);
+    animation: flip .8s ease-in-out forwards; }
+
+@keyframes flip {
+  0% { }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1; } }
+
+@media screen and (max-width: 900px) {
+  .grid li {
+    width: 50%; } }
+
+@media screen and (max-width: 400px) {
+  .grid li {
+    width: 100%; } }
+
+a {
+  color: #aaa;
+  text-decoration: none; }
+
+a:hover,
+a:active {
+  color: #333; }
 
 /*# sourceMappingURL=style.css.map */

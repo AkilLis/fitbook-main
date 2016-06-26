@@ -25,8 +25,9 @@
         </div>
       </li>
     </ul>
+
 </aside>
-<section class="wizard-component" scrollable="true">
+<section class="wizard-component" id="scrollAbleWizard">
     <div id="left-menu">
       <div class="sub-left-menu scroll">
         <div class="progress-bar__sbi-stage_container">
@@ -112,52 +113,57 @@
             <li class="tabs-title  wizard-tab"><a href="#page-body">Гол хэсэг</a></li>
             <li class="tabs-title  wizard-tab"><a href="#page-footer">Хөл</a></li>
           </ul>
-          <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            ...
-          </div>
-          <div class="row small-up-1 medium-up-2 large-up-2 widget-container" id="page-body">
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="This is body">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-          </div>
-          <div class="row small-up-1 medium-up-2 large-up-2 widget-container" id="page-footer">
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="This is footer">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-            <div class="column">
-              <img src="//placehold.it/300x300" class="thumbnail" alt="">
-            </div>
-          </div>
+          <ul class="grid effect-6" id="grid">
+            <li><a href="#"><img src="{{asset('images/widget/1.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/2.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/4.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/12.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/13.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/10.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/9.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/2.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/14.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/5.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/6.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/7.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/8.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/9.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/12.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/13.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/10.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/11.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/2.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/14.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/1.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/2.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/4.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/12.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/13.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/10.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/9.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/2.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/14.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/5.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/6.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/7.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/8.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/9.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/12.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/13.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/10.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/11.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/2.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/14.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/1.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/2.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/4.jpg')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/12.png')}}"></a></li>
+            <li><a href="#"><img src="{{asset('images/widget/13.png')}}"></a></li>
+    </ul>
         </div>
+        <!--test-->
+        
       </div>
     </div>
+    
 </section>
