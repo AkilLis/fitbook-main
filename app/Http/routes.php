@@ -40,3 +40,7 @@ Route::get('/{clubId?}', function(Request $request, $clubId)
 	return view($directPage)->with('widgets', $widgets);
 	/*return $widgets;*/
 });
+
+Route::get('auth/login', function(){
+	return view('auth.login');
+});
