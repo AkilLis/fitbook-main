@@ -14,7 +14,6 @@
 	var pane;
 
 	function getViewportH() {
-		debugger;
 		var client = pane.clientHeight,
 			inner = pane['innerHeight'];
 		
@@ -70,7 +69,6 @@
 	}
 
 	function AnimOnScroll(pane_param, el, options ) {	
-		debugger;
 		pane = pane_param;
 		this.el = el;
 		this.options = extend( this.defaults, options );
@@ -124,7 +122,6 @@
 			});
 		},
 		_onScrollFn : function() {
-			debugger;
 			var self = this;
 			if( !this.didScroll ) {
 				this.didScroll = true;
@@ -132,7 +129,6 @@
 			}
 		},
 		_scrollPage : function() {
-			debugger;
 			var self = this;
 			this.items.forEach( function( el, i ) {
 				if( !classie.has( el, 'shown' ) && !classie.has( el, 'animate' ) && inViewport( el, self.options.viewportFactor ) ) {
