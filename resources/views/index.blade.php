@@ -9,8 +9,8 @@
 			    <span class="show-for-sr">Show menu</span>
 			</a></div>
 			<ul id="example-dropdown" class="f-dropdown dropdown-pane dropdown-menu" data-dropdown>
-				<li><a>Facebook</a></li>
-				<li><a>Twitter</a></li>
+				<li><a><i class="fa fa-facebook-official"></i>  Facebook</a></li>
+				<li><a><i class="fa fa-google-plus"></i>  Google</a></li>
 			</ul>
 			<div class="login-item"><a class="button btn-fb btn-trans">Forgot Password</a></div>
 		</div>
