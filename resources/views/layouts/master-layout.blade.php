@@ -9,7 +9,7 @@
     <script type="text/javascript" src="{{asset('app/app.js')}}" ></script>
     <script type="text/javascript" src="{{asset('app/controller/clubsearchcontroller.js')}}" ></script>
 </head>
-<body>
+<body class="dark">
     <div class="container large-12 columns" ng-controller="searchCtrl">
 		@yield('content')
     </div>
