@@ -9,12 +9,14 @@
     	<div>
     		@include('includes.user-header')
     	</div>
-    	<div>
+        <div class="row">
+    	<div class="small-12 medium-4 columns">
     		@include('includes.user-left-side')
     	</div>
-        <div class="main_container">
+        <div class="small-12 medium-8 columns">
             @yield('content')
     	</div>
+        </div>
     </div>
    <!-- FOR WIDGET ANIMATION -->
    <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>

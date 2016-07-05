@@ -1,8 +1,12 @@
-<nav class="navbar header-nav">
-    <div class="row">
-      <div class="small-12 medium-12 large-12 columns">
-        <div class="logo logo_icon">FITBOOK</div>
-        <div class="drop-down">Ahula</div>
-      </div>
-    </div>
-</nav>
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li class="menu-text">Site Title</li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li>AHULA</li>
+    </ul>
+  </div>
+</div>

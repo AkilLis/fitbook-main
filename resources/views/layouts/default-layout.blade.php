@@ -2,37 +2,29 @@
 <html ng-app="fitwork">
 <head>
     <title>Laravel</title>
-    <style>
-	    ul#club-info {
-		    padding: 0;
-		}
-
-		ul#club-info li {
-		    display: inline;
-		}
-
-		ul#club-info li a {
-		    background-color: black;
-		    color: white;
-		    padding: 10px 20px;
-		    text-decoration: none;
-		    border-radius: 4px 4px 0 0;
-		}
-
-		ul#club-info li a:hover {
-		    background-color: orange;
-		}
-    </style>
+    @include('includes.header')
+    <link rel="stylesheet" type="text/css" href="{{asset('css/widget/hw-default.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/widget/cw-default.css')}}">
 </head>
-<body class="nav-md" id="style-3">
+<body>
     <div class="container body">
-        <div class="main_container">
-            @include('includes.club-header')
-            @foreach ($widgets as $widget)
-     			@include($widget)
-            @endforeach
-            @yield('content')
+    	<div>
+    		@include($header_widget)
+    	</div>
+    	<div>
+    		@yield('content');
+    	</div>
+      <div>
+        @include($footer_widget)
     	</div>
     </div>
+   <!-- FOR WIDGET ANIMATION -->
+   <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+   <script type="text/javascript" src="{{asset('js/angular.min.js')}}" ></script>
+   <script type="text/javascript" src="{{asset('js/ng-map.min.js')}}" ></script>
+   <script type="text/javascript" src="{{asset('app/app.js')}}" ></script>
+   <script type="text/javascript" src="{{asset('app/controller/clubsearchcontroller.js')}}"></script>
+   <script type="text/javascript" src="{{asset('js/foundation.min.js')}}"></script>
+   <script type="text/javascript" src="{{asset('js/what-input.js')}}"></script>
 </body>
 </html>

@@ -21,24 +21,31 @@ Route::get('/', function ()
 	return $userId;
 })->middleware('throttle:3');*/
 
+Route::get('/create-club', function(Request $request) 
+{
+    return view('create-club');
+});
+
 Route::get('/{clubId?}', function(Request $request, $clubId)
 {
-	$widgets = array();
-	$directPage = 'welcome';
+	$widget_header = "widgets.header.default";
+	$widget_footer = "widgets.footer.default";
+	$widget_content = array();
+
 	switch ($clubId) {
 		case 'flexgym':
-			array_push($widgets, 'widgets.bootstrap');
-			array_push($widgets, 'widgets.foundation');
+			array_push($widget_content, 'widgets.content.default');
 			break;
 		case 'goldengym':
+			array_push($widget_content, 'widgets.content.default');
 			break;
 		default:
-			array_push($widgets, 'widgets.twitter');
-			$directPage = 'user';
+			array_push($widget_content, 'widgets.content.default');
 			break;
 	}
-	return view($directPage)->with('widgets', $widgets);
-	/*return $widgets;*/
+	return view('user')->with('widgets_content', $widget_content)
+						    ->with('header_widget', $widget_header)
+						    ->with('footer_widget', $widget_footer);
 });
 
 Route::get('auth/login', function(){

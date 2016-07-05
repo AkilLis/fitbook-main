@@ -1,26 +1,26 @@
-<aside class="menu">
+<aside class="ft-menu">
     <ul>
       <li>
-        <div class="menu-container">
-          <a class="men-li">
-            <i class="fa fa-plus menu-ico"></i>
-            <div class="menu-lab">Create club</div>  
+        <div class="ft-menu-container">
+          <a class="ft-men-li">
+            <i class="fa fa-plus ft-menu-ico"></i>
+            <div class="ft-menu-lab">Create club</div>  
           </a>
         </div>
       </li>
       <li>
-        <div class="menu-container">
-          <a class="men-li">
-            <i class="fa fa-bar-chart menu-ico"></i>
-            <div class="menu-lab">Flexgym 1</div>  
+        <div class="ft-menu-container">
+          <a class="ft-men-li">
+            <i class="fa fa-bar-chart ft-menu-ico"></i>
+            <div class="ft-menu-lab">Flexgym 1</div>  
           </a>
         </div>
       </li>
       <li>
-        <div class="menu-container">
+        <div class="ft-menu-container">
           <a class="men-li">
-            <i class="fa fa-bar-chart menu-ico"></i>
-            <div class="menu-lab">Flexgym 1</div>  
+            <i class="fa fa-bar-chart ft-menu-ico"></i>
+            <div class="ft-menu-lab">Flexgym 1</div>  
           </a>
         </div>
       </li>
