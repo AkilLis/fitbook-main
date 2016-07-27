@@ -26,6 +26,11 @@ Route::get('/create-club', function(Request $request)
     return view('create-club');
 });
 
+Route::get('/search', function(Request $request) 
+{
+    return view('search');
+});
+
 Route::get('/{clubId?}', function(Request $request, $clubId)
 {
 	$widget_header = "widgets.header.default";
@@ -51,3 +56,14 @@ Route::get('/{clubId?}', function(Request $request, $clubId)
 Route::get('auth/login', function(){
 	return view('auth.login');
 });
+
+//Social Login
+Route::get('/login/{provider?}',[
+    'uses' => 'Auth\AuthController@getSocialAuth',
+    'as'   => 'auth.getSocialAuth'
+]);
+
+Route::get('/login/callback/{provider?}',[
+    'uses' => 'Auth\AuthController@getSocialAuthCallback',
+    'as'   => 'auth.getSocialAuthCallback'
+]);

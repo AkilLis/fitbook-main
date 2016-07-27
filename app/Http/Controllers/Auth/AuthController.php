@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
-use Validator;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\ThrottlesLogins;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Laravel\Socialite\Facades\Socialite;
+use Validator;
 
 class AuthController extends Controller
 {
@@ -38,6 +39,19 @@ class AuthController extends Controller
     public function __construct()
     {
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+    }
+
+    public function getSocialAuth($provider = null)
+    {
+        if(!config("services.$provider")) abort('404'); //just to handle providers that doesn't exist
+        return Socialite::driver($provider)->redirect();
+    }
+
+
+    public function getSocialAuthCallback($provider = null)
+    {
+        $user = Socialite::driver($provider)->user();
+        dd($user);
     }
 
     /**
