@@ -102,7 +102,7 @@
 </script> -->
 <div class="widget-1">
 	<h1>Хөтөлбөрүүд  </br> <div class="line"> </div></h1>
-	<ul class="large-block-grid-3">
+	<ul>
 		<li>
 			<img class="clip-circle" src="{{asset('images/widget/2.jpg')}}">
 			<span>Бодибилдинг</span>

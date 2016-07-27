@@ -13,4 +13,7 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass(['style.scss'],'public/css/style.css');
+    mix.sass(['widget/hw-default.scss'],'public/css/widget/hw-default.css');
+    mix.sass(['widget/cw-default.scss'],'public/css/widget/cw-default.css');
+    
 });

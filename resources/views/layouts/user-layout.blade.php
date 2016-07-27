@@ -9,13 +9,13 @@
     	<div>
     		@include('includes.user-header')
     	</div>
-        <div style="float: left;">
-        	<div>
-        		@include('includes.user-left-side')
-        	</div>
-            <div>
-                @yield('content')
-        	</div>
+        <div class="row">
+    	<div class="small-12 medium-4 columns">
+    		@include('includes.user-left-side')
+    	</div>
+        <div class="small-12 medium-8 columns">
+            @yield('content')
+    	</div>
         </div>
     </div>
    <!-- FOR WIDGET ANIMATION -->

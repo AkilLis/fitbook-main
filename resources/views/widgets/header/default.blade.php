@@ -1,27 +1,27 @@
-<!-- Header -->
-
-  <header id="masthead" class="masthead navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-          <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Site Logo"></a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <nav id="main-menu" class="collapse navbar-collapse pull-right">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#main-slider">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact us</a></li>
-        </ul>
-      </nav><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </header><!-- /#masthead -->
-
-  <!-- Header -->
+<div class="top-bar hw-default-top-bar">
+  <div class="top-bar-left">
+    <ul class="menu ">
+      <li class="menu-text hw-default-logo"><img src="{{asset('images/flexgym/logo.png')}}"> FLEXGYM</li>
+      <li><a href="#">Сургалтууд</a></li>
+      <li><a href="#">Багш нар</a></li>
+      <li><a href="#">Үнэ</a></li>
+      <li><a href="#">Холбоо барих</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><a href="#" class="button btn-fb btn-trans">Нэвтрэх</a></li>
+    </ul>
+  </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax-content">
+    <div class="parallax-back">
+      <!-- <div class="animated-word">
+        <h1>Үзүүлэлт</h1>
+        <p>Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар Тайлбар </p>
+      </div> -->
+      <p>Гоё уриа үг</p>
+    </div>
+  </div>
+</div>
